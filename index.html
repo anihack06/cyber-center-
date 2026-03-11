@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cyber Command Center</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!-- MATRIX BACKGROUND -->
+<canvas id="matrixCanvas"></canvas>
+
+<!-- LOGIN SCREEN -->
+<div id="loginScreen">
+
+<h1>CYBER COMMAND ACCESS</h1>
+
+<div class="loginBox">
+
+<input id="username" placeholder="Username">
+
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="login()">ENTER SYSTEM</button>
+
+<p id="loginMessage"></p>
+
+</div>
+
+</div>
+
+<!-- MAIN SYSTEM -->
+<div id="mainSystem" style="display:none;">
+
+<header>
+<h1>GLOBAL CYBER SECURITY COMMAND CENTER</h1>
+</header>
+
+<div class="layout">
+
+<!-- TERMINAL -->
+<div class="terminalSection">
+
+<h2>Terminal</h2>
+
+<div id="terminalOutput"></div>
+
+<div class="terminalInputLine">
+
+<span class="terminalPrompt">>></span>
+
+<input id="terminalInput" autocomplete="off">
+
+</div>
+
+</div>
+
+<!-- DASHBOARD -->
+<div class="dashboard">
+
+<!-- SYSTEM MONITOR -->
+<div class="panel">
+
+<h2>System Monitor</h2>
+
+<canvas id="cpuChart"></canvas>
+<canvas id="networkChart"></canvas>
+
+</div>
+
+<!-- ATTACK SIMULATION -->
+<div class="panel">
+
+<h2>Attack Simulation</h2>
+
+<button onclick="launchAttack()">Launch Attack</button>
+
+<div class="progressContainer">
+<div id="attackBar"></div>
+</div>
+
+</div>
+
+<!-- DATABASE -->
+<div class="panel">
+
+<h2>Database Explorer</h2>
+
+<button onclick="loadDatabase()">Load Database</button>
+
+<div id="databasePanel"></div>
+
+</div>
+
+<!-- CYBER MAP -->
+<div class="panel">
+
+<h2>Global Cyber Map</h2>
+
+<div id="worldMap">
+Waiting for signals...
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- JAVASCRIPT FILES -->
+
+<script src="login.js"></script>
+<script src="matrix.js"></script>
+<script src="terminal.js"></script>
+<script src="command.js"></script>
+<script src="charts.js"></script>
+<script src="ai.js"></script>
+<script src="hackEngine.js"></script>
+<script src="map.js"></script>
+<script src="database.js"></script>
+<script src="keyboard.js"></script>
+<script src="particles.js"></script>
+
+</body>
+</html>
