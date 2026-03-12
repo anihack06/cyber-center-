@@ -12,7 +12,7 @@ const loginMessage = document.getElementById("loginMessage");
 
 // Demo credentials
 const USER = "root";
-const PASS = "toor";
+const PASS = "1234";
 
 
 // Check login
