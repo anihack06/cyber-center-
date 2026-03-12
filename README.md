@@ -12,9 +12,14 @@ This interface is inspired by **cyberpunk and Matrix-style security dashboards**
 
 You can view the project here:
 
-https://anihack06.github.io/cyber_command-center/
+https://anihack06.github.io/cyber-command-center/
 
 ---
+## login 
+you can login this project using 
+
+username:- root
+password:- 1234
 
 ## Features
 
